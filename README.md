@@ -1,16 +1,16 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Shiddharth Saran M         |
+| Date         | 04/23/2024                 |
+| Course       | Spring                     |
+| Assignment # | Class Project              |
 
 # Assignment Overview
 Please add a paragraph or two overviewing the objectives of the assignment.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/shiddharthsaran/cs-665-class-project
 
 # Implementation Description 
 

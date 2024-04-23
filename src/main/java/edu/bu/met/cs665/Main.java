@@ -4,7 +4,6 @@ import edu.bu.met.cs665.SF90Builders.SF90Builder;
 import edu.bu.met.cs665.SF90Builders.SF90ManualBuilder;
 import edu.bu.met.cs665.SF90Car.SF90Car;
 import edu.bu.met.cs665.SF90Car.SF90Manual;
-import edu.bu.met.cs665.SF90Director.SF90Director;
 import edu.bu.met.cs665.SF90ConfigOptions.StartingConfigurations.*;
 import edu.bu.met.cs665.SF90ConfigOptions.PaintWorks.*;
 import edu.bu.met.cs665.SF90ConfigOptions.Roofs.*;
