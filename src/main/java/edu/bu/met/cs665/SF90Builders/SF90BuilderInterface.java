@@ -13,5 +13,6 @@ public interface SF90BuilderInterface {
     void setExhaustPipes(SF90OptionsStrategyInterface exhaustPipes);
     void setSeatsType(SF90OptionsStrategyInterface seatsType);
     void setInteriorColor(SF90OptionsStrategyInterface interiorColor);
+    void setInteriorDetail(SF90OptionsStrategyInterface interiorDetail);
     void setCarpets(SF90OptionsStrategyInterface carpets);
 }

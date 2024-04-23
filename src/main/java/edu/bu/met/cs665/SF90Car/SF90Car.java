@@ -13,6 +13,7 @@ public class SF90Car {
     private final SF90OptionsStrategyInterface exhaustPipes;
     private final SF90OptionsStrategyInterface seatsType;
     private final SF90OptionsStrategyInterface interiorColor;
+    private final SF90OptionsStrategyInterface interiorDetail;
     private final SF90OptionsStrategyInterface carpets;
 
     public SF90Car(SF90OptionsStrategyInterface startingConfig, SF90OptionsStrategyInterface paintWork,
@@ -20,7 +21,7 @@ public class SF90Car {
                    SF90OptionsStrategyInterface wheels, SF90OptionsStrategyInterface calipers,
                    SF90OptionsStrategyInterface bodyWorkElements, SF90OptionsStrategyInterface exhaustPipes,
                    SF90OptionsStrategyInterface seatsType, SF90OptionsStrategyInterface interiorColor,
-                   SF90OptionsStrategyInterface carpets){
+                   SF90OptionsStrategyInterface interiorDetail, SF90OptionsStrategyInterface carpets){
         this.startingConfig = startingConfig;
         this.paintWork = paintWork;
         this.roof = roof;
@@ -31,6 +32,7 @@ public class SF90Car {
         this.exhaustPipes = exhaustPipes;
         this.seatsType = seatsType;
         this.interiorColor = interiorColor;
+        this.interiorDetail = interiorDetail;
         this.carpets = carpets;
     }
     public String getStartingConfig(){
@@ -63,6 +65,7 @@ public class SF90Car {
     public String getInteriorColor(){
         return interiorColor.getOptionDetails();
     }
+    public String getInteriorDetail(){ return interiorDetail.getOptionDetails(); }
     public String getCarpets(){
         return carpets.getOptionDetails();
     }

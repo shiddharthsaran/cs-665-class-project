@@ -14,6 +14,7 @@ public class SF90Builder implements SF90BuilderInterface{
     private SF90OptionsStrategyInterface exhaustPipes;
     private SF90OptionsStrategyInterface seatsType;
     private SF90OptionsStrategyInterface interiorColor;
+    private SF90OptionsStrategyInterface interiorDetail;
     private SF90OptionsStrategyInterface carpets;
 
     @Override
@@ -70,11 +71,13 @@ public class SF90Builder implements SF90BuilderInterface{
     }
 
     @Override
+    public void setInteriorDetail(SF90OptionsStrategyInterface interiorDetail){ this.interiorDetail = interiorDetail; }
+    @Override
     public void setCarpets(SF90OptionsStrategyInterface carpets) {
         this.carpets = carpets;
     }
 
     public SF90Car getSF90ConfigCar(){
-        return new SF90Car(startingConfig, paintWork, roof, engineBay, wheels, calipers, bodyWorkElements, exhaustPipes, seatsType, interiorColor, carpets);
+        return new SF90Car(startingConfig, paintWork, roof, engineBay, wheels, calipers, bodyWorkElements, exhaustPipes, seatsType, interiorColor, interiorDetail, carpets);
     }
 }

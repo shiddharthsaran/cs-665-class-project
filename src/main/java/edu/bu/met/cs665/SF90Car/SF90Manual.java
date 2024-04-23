@@ -13,6 +13,7 @@ public class SF90Manual {
     private final SF90OptionsStrategyInterface exhaustPipes;
     private final SF90OptionsStrategyInterface seatsType;
     private final SF90OptionsStrategyInterface interiorColor;
+    private final SF90OptionsStrategyInterface interiorDetail;
     private final SF90OptionsStrategyInterface carpets;
 
     public SF90Manual(SF90OptionsStrategyInterface startingConfig, SF90OptionsStrategyInterface paintWork,
@@ -20,7 +21,7 @@ public class SF90Manual {
                    SF90OptionsStrategyInterface wheels, SF90OptionsStrategyInterface calipers,
                    SF90OptionsStrategyInterface bodyWorkElements, SF90OptionsStrategyInterface exhaustPipes,
                    SF90OptionsStrategyInterface seatsType, SF90OptionsStrategyInterface interiorColor,
-                   SF90OptionsStrategyInterface carpets){
+                   SF90OptionsStrategyInterface interiorDetail, SF90OptionsStrategyInterface carpets){
         this.startingConfig = startingConfig;
         this.paintWork = paintWork;
         this.roof = roof;
@@ -31,6 +32,7 @@ public class SF90Manual {
         this.exhaustPipes = exhaustPipes;
         this.seatsType = seatsType;
         this.interiorColor = interiorColor;
+        this.interiorDetail = interiorDetail;
         this.carpets = carpets;
     }
 
@@ -42,9 +44,11 @@ public class SF90Manual {
         sf90ConfigInfo += "Engine Bay: " + engineBay.getOptionDetails() + "\n";
         sf90ConfigInfo += "Wheels: " + wheels.getOptionDetails() + "\n";
         sf90ConfigInfo += "Calipers: " + calipers.getOptionDetails() + "\n";
+        sf90ConfigInfo += "Body Work Elements: " + bodyWorkElements.getOptionDetails() + "\n";
         sf90ConfigInfo += "Exhaust Pipes: " + exhaustPipes.getOptionDetails() + "\n";
         sf90ConfigInfo += "Seats Type: " + seatsType.getOptionDetails() + "\n";
         sf90ConfigInfo += "Interior Color: " + interiorColor.getOptionDetails() + "\n";
+        sf90ConfigInfo += "Interior Detail: " + interiorDetail.getOptionDetails() + "\n";
         sf90ConfigInfo += "Carpets: " + carpets.getOptionDetails() + "\n";
         return sf90ConfigInfo;
     }
