@@ -165,8 +165,8 @@ public class Main {
             customSF90Builder.setInteriorDetail(new DefaultInteriorDetail());
             customSF90ManualBuilder.setInteriorDetail(new DefaultInteriorDetail());
         } else if (interiorDetailUsrOpt == 2) {
-            customSF90Builder.setInteriorColor(new CarbonInteriorDetail());
-            customSF90ManualBuilder.setInteriorColor(new CarbonInteriorDetail());
+            customSF90Builder.setInteriorDetail(new CarbonInteriorDetail());
+            customSF90ManualBuilder.setInteriorDetail(new CarbonInteriorDetail());
         }
 
         int carpetsUsrOpt = getUserInp(1, 2, "Choose SF90 Stradale Carpet:\n1. Nero\n2. Alcantara Inserts");
