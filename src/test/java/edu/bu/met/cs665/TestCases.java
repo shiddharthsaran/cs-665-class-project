@@ -1,13 +1,18 @@
+/**
+ * Name: Shiddharth Saran M
+ * Course: CS-665 Software Design & Patterns
+ * Date: 04/23/2024
+ * File Name: TestCases.java
+ * Description: TestCases class contains unit tests for the SF90Builder, SF90Director, and SF90OptionsStrategyInterface.
+ */
 package edu.bu.met.cs665;
 
 import static org.junit.Assert.assertEquals;
 
 import edu.bu.met.cs665.SF90Builders.SF90Builder;
-import edu.bu.met.cs665.SF90Builders.SF90BuilderInterface;
 import edu.bu.met.cs665.SF90Car.SF90Car;
 import edu.bu.met.cs665.SF90Director.SF90Director;
 import edu.bu.met.cs665.SF90OptionStrategy.SF90OptionsStrategyInterface;
-import edu.bu.met.cs665.SF90Builders.SF90BuilderInterface;
 import edu.bu.met.cs665.SF90ConfigOptions.StartingConfigurations.*;
 import edu.bu.met.cs665.SF90ConfigOptions.PaintWorks.*;
 import edu.bu.met.cs665.SF90ConfigOptions.Roofs.*;
@@ -31,7 +36,9 @@ public class TestCases {
 
     public TestCases() {
     }
-
+    /**
+     * Test method to verify the configuration of an Ultimate SF90 Car using the SF90Builder.
+     */
     @Test
     public void testSF90Dictator() {
 
@@ -43,7 +50,9 @@ public class TestCases {
 
     }
 
-
+    /**
+     * Test method to validate setting and getting option details using SF90OptionsStrategyInterface.
+     */
     @Test
     public void testSetOption() {
         SF90OptionsStrategyInterface defaultEngineBay = new DefaultEngineBay();
@@ -53,7 +62,9 @@ public class TestCases {
         assertEquals(defaultEngineBay.getOptionDetails(),"Type: SuperDefault, Information: Default Info.");
 
     }
-
+    /**
+     * Test method to validate the customization of an SF90 Car using the SF90Builder.
+     */
 
     @Test
     public void testSF90Builder() {

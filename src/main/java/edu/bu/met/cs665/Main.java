@@ -1,3 +1,10 @@
+/**
+ * Name: Shiddharth Saran M
+ * Course: CS-665 Software Design & Patterns
+ * Date: 04/23/2024
+ * File Name: Main.java
+ * Description: Main class to interactively build custom SF90 cars and print their configurations.
+ */
 package edu.bu.met.cs665;
 import java.util.Scanner;
 import edu.bu.met.cs665.SF90Builders.SF90Builder;
@@ -18,6 +25,13 @@ import edu.bu.met.cs665.SF90ConfigOptions.InteriorDetails.*;
 import edu.bu.met.cs665.SF90ConfigOptions.Carpets.*;
 
 public class Main {
+    /**
+     * Gets user input within a specified range.
+     * @param min The minimum allowed input value.
+     * @param max The maximum allowed input value.
+     * @param usrQues The question to prompt the user.
+     * @return The user's validated input.
+     */
     public static int getUserInp(int min, int max, String usrQues){
         Scanner inpObj = new Scanner(System.in);
         while (true){
@@ -30,8 +44,11 @@ public class Main {
         }
     }
     public static void main(String[] args){
+        // Create instances of SF90Builder and SF90ManualBuilder
         SF90Builder customSF90Builder = new SF90Builder();
         SF90ManualBuilder customSF90ManualBuilder = new SF90ManualBuilder();
+        // Let the user choose starting configuration
+
         int staringConfigUsrOpt = getUserInp(1, 2, "Choose SF90 Stradale Starting Configuration:\n1. Basic Starting Configuration\n2. Assetto Fiorano\n");
         if (staringConfigUsrOpt == 1){
             customSF90Builder.setStartingConfig(new BasicStartingConfiguration());
@@ -40,7 +57,7 @@ public class Main {
             customSF90Builder.setStartingConfig(new AssettoFioranoStartingConfiguration());
             customSF90ManualBuilder.setStartingConfig(new AssettoFioranoStartingConfiguration());
         }
-
+        // Repeat the process for all configurable options
         int paintWorkUsrOpt = getUserInp(1, 4, "Choose SF90 Stradale Paint Work:\n1. Giallo Modena\n2. Grigio Ingrid\n3. Rosso Dino\n4. Rosso Ferrari F1-75\n");
         if (paintWorkUsrOpt == 1){
             customSF90Builder.setPaintWork(new GialloModenaPaintWork());
@@ -160,7 +177,7 @@ public class Main {
             customSF90Builder.setCarpets(new AlcantaraInsertsCarpet());
             customSF90ManualBuilder.setCarpets(new AlcantaraInsertsCarpet());
         }
-
+        // Finally, get the constructed SF90Car and SF90Manual objects and print their configurations
         SF90Car customSF90Car = customSF90Builder.getSF90ConfigCar();
         System.out.println(customSF90Car.getStartingConfig());
 

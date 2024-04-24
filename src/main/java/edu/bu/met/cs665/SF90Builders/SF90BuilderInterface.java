@@ -1,8 +1,17 @@
+/**
+ * Name: Shiddharth Saran M
+ * Course: CS-665 Software Design & Patterns
+ * Date: 04/23/2024
+ * File Name: SF90BuilderInterface.java
+ * Description: SF90BuilderInterface interface defines methods to set different components of an SF90 car configuration.
+ */
+
 package edu.bu.met.cs665.SF90Builders;
 
 import edu.bu.met.cs665.SF90OptionStrategy.SF90OptionsStrategyInterface;
 
 public interface SF90BuilderInterface {
+    // Interface methods to set different components of an SF90 car configuration
     void setStartingConfig(SF90OptionsStrategyInterface startingConfig);
     void setPaintWork(SF90OptionsStrategyInterface paintWork);
     void setRoof(SF90OptionsStrategyInterface roof);

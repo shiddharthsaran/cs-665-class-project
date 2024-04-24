@@ -8,6 +8,7 @@
 
 # Assignment Overview
 Please add a paragraph or two overviewing the objectives of the assignment.
+The objective of the project is to provide the user options to configure their own custom Ferrari SF90 Stradale.
 
 # GitHub Repository Link:
 https://github.com/shiddharthsaran/cs-665-class-project
@@ -19,11 +20,15 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+  - Implemented Car options using interfaces so new types of options and sub-options can be easily added or removed.
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+  - For simplicity and understanding followed clear naming conventions, modularizing code into separate classes and packages, added comments and doc blocks for all classes to aid in understanding.
 - Describe how you have avoided duplicated code and why it is important.
+  - Duplicate code is minimized by using Interfaces to define the builder and the options used to build the car.
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+  - Builder Design Pattern and Strategy Design Pattern are used, builder pattern is used to provide clear step-by-step construction to build the car and strategy pattern is used to flexibly switching between options. 
 
 
 # Maven Commands

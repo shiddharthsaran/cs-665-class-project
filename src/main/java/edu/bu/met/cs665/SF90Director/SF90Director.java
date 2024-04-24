@@ -1,3 +1,10 @@
+/**
+ * Name: Shiddharth Saran M
+ * Course: CS-665 Software Design & Patterns
+ * Date: 04/23/2024
+ * File Name: SF90Director.java
+ * Description: SF90Director class directs the construction of SF90Car objects with predefined configurations.
+ */
 package edu.bu.met.cs665.SF90Director;
 import edu.bu.met.cs665.SF90Builders.SF90Builder;
 import edu.bu.met.cs665.SF90Builders.SF90BuilderInterface;
@@ -17,6 +24,10 @@ import edu.bu.met.cs665.SF90ConfigOptions.Carpets.*;
 
 
 public class SF90Director {
+    /**
+     * Method to construct a basic SF90Car configuration.
+     * @param basicSF90 The builder for the basic SF90Car configuration.
+     */
     public void BasicSF90Car(SF90BuilderInterface basicSF90){
         basicSF90.setStartingConfig(new BasicStartingConfiguration());
         basicSF90.setPaintWork(new GialloModenaPaintWork());
@@ -31,7 +42,10 @@ public class SF90Director {
         basicSF90.setInteriorDetail(new DefaultInteriorDetail());
         basicSF90.setCarpets(new NeroCarpet());
     }
-
+    /**
+     * Method to construct an ultimate SF90Car configuration.
+     * @param ultimateSF90 The builder for the ultimate SF90Car configuration.
+     */
     public void UltimateSF90(SF90BuilderInterface ultimateSF90){
         ultimateSF90.setStartingConfig(new AssettoFioranoStartingConfiguration());
         ultimateSF90.setPaintWork(new RossoFerrariPaintWork());
